@@ -15,4 +15,18 @@ class RoleTest extends Specification {
         Role.ANY     | 0
         Role.NONE    | -1
     }
+
+    def "lookup"() {
+        expect:
+        Role.lookup(type) == result
+
+        where:
+        type | result
+        1    | Role.USER
+        2    | Role.ADMIN
+        0    | Role.ANY
+        -1   | Role.NONE
+        3    | Role.NONE
+    }
+
 }
