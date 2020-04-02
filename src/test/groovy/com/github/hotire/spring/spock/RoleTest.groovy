@@ -5,14 +5,14 @@ import spock.lang.Specification
 class RoleTest extends Specification {
 
     def "get type"() {
-        given:
-        final Integer expected = 1
-        final Role role = Role.USER
+        expect:
+        role.getType() == result
 
-        when:
-        final Integer result = role.getType()
-
-        then:
-        result == expected
+        where:
+        role         | result
+        Role.USER    | 1
+        Role.ADMIN   | 2
+        Role.ANY     | 0
+        Role.NONE    | -1
     }
 }
