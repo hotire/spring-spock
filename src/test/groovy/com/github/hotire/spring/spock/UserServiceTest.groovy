@@ -17,4 +17,18 @@ class UserServiceTest extends Specification {
         then:
         result == user
     }
+
+    def "throw NoSuchElementException"() {
+        given:
+        final Long id = 1L
+        final UserRepository repository = Mock(UserRepository.class)
+        final UserService userService = new UserService(repository)
+
+        when:
+        repository.findById(id) >> Optional.empty()
+        userService.findById(id)
+
+        then:
+        thrown(NoSuchElementException.class)
+    }
 }
