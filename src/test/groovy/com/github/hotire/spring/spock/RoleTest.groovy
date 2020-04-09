@@ -27,6 +27,7 @@ class RoleTest extends Specification {
         0    | Role.ANY
         -1   | Role.NONE
         3    | Role.NONE
+        null | Role.NONE
     }
 
 }
