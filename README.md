@@ -25,9 +25,11 @@ Spock에서는 given, when, then과 같은 코드를 block이라 한다.
 
 block은 test method에 최소한 하나는 있어야 한다. 
 
-### given 
+### given / setup
 
 테스트에 필요한 환경을 설정하는 작업 
+
+항상 다른 블록보다 먼저 사용해야 한다. given / setup이 나오기 전에 다른 블록이 나오면 암묵적으로 given / setpup 블록으로 인식한다. 
 
 ### when 
 
