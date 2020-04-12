@@ -11,6 +11,10 @@ Spock is a testing and specification framework for Java and Groovy applications.
 - reference : http://spockframework.org/
 
 
+BDD(Behaviour-Driven Development) 프레임워크이다. 
+
+TDD와 비슷하지만, 명세와 행위를 더 명확하게 한다. 
+
 
 ### Getting Started 
 
