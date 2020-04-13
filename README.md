@@ -47,3 +47,19 @@ block은 test method에 최소한 하나는 있어야 한다.
 
 테스트 코드 실행 및 검증 (when + then)
 
+## Comparison to JUnit
+
+| Spock               | JUnit                              |
+| :------------------ | :--------------------------------- |
+| Specification       | Test class                         |
+| `setup()`           | `@Before`                          |
+| `cleanup()`         | `@After`                           |
+| `setupSpec()`       | `@BeforeClass`                     |
+| `cleanupSpec()`     | `@AfterClass`                      |
+| Feature             | Test                               |
+| Feature method      | Test method                        |
+| Data-driven feature | Theory                             |
+| Condition           | Assertion                          |
+| Exception condition | `@Test(expected=…)`                |
+| Interaction         | Mock expectation (e.g. in Mockito) |
+
