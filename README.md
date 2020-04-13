@@ -29,6 +29,9 @@ Spock에서는 given, when, then과 같은 코드를 block이라 한다.
 
 block은 test method에 최소한 하나는 있어야 한다. 
 
+
+![block](/doc/Blocks2Phases.png)
+
 ### given / setup
 
 테스트에 필요한 환경을 설정하는 작업 
