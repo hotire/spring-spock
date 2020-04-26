@@ -1,14 +1,12 @@
 package com.github.hotire.spring.spock
 
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 import spock.lang.Specification
 
-@AutoConfigureMockMvc
 @WebMvcTest(WebController)
 class WebControllerTest extends Specification {
 
